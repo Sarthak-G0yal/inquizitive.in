@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
 
 /* Header CSS Start*/
 
@@ -66,7 +66,7 @@ a:hover{
     border-radius: .7rem;
     font-weight: 550;
     background-color: #001011;
-    color:whitesmoke;
+    color:rgb(219, 219, 219);
     font-size: 1rem;
 }
 #headerbutton:hover{
@@ -75,96 +75,57 @@ a:hover{
     border-radius: .7rem;
     margin-right: .5rem;
     background-color: #001011;
-    text-shadow: 1px 1px 5px white;
-    color:whitesmoke;
+    text-shadow: 1px 1px 10px white;
+    color:white;
 }
 
 /* Header CSS End */
 
-/* Main Body CSS  Start*/
 
- .Photo{
-    height: 27rem;
+/* Main Body CSS Start */
+
+.intro-section{
+    height: 33rem;
     width: 100%;
-    border: 2px solid black;
-    background-image: url('../img/TeamInquizitive.JPG');
-    background-size: cover;
-    background-position: center center;
- }
-
- .Photo{
-    height: 27rem;
-    width: 100%;
-    background-color: white;
-
- }
-
- #Quote{
-    font-size: 4rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    top: 18rem;
- }
-
- #QuoteMeaning{
-    display: inline;
-    font-size: 1.5rem;
-    font-family: 'Cedarville Cursive',cursive;
-    color: #fff;
-    position: relative;
-    top: 17rem;
-    left: 45rem;
- }
-
-
- .button2{
-    height: 8rem;
-    width: 100%;
-
- }
-
- .button2 button{
-    height:4rem;
-    width:15%;
-    border-radius: .7rem;
-    font-weight: 550;
-    background-color: #001011;
-    color:whitesmoke;
-    font-size: 1.2rem;
-    position: relative;
-    top: 2rem;
-    left: 42.5%;
-}
-.button2 button:hover{
-    height:4rem;
-    width:15%;
-    border-radius: .7rem;
-    font-size: 1.2rem;
-    background-color: #001011;
-    text-shadow: 1px 1px 5px white;
-    color:whitesmoke;
-}
-
-/* Main Body CSS End*/
-
-
-/* Footer CSS Start*/
-
-footer {
-    height: 20rem;
-    width:100%;
     background-color: #001011;
 }
-.social-nav{
+
+.intro-section img{
+    max-height: 100%;
+    max-width: auto;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 15px whitesmoke;
+    height: 450px;
     position: relative;
-    top: 3%;
-    left: 44%
-}
-.socialbutton{
-    height: 1.875rem;
-    width: 1.875rem;
+    top:2rem;
+    left: 2rem;
 }
 
-/* Footer CSS End*/
+.intro-section h2{
+    color: #7C90A0;
+    width: 50%;
+    display: flex;
+    margin: 0;    
+    font-size: 2.7rem;
+    text-align: right;
+    position: relative;
+    top: -25rem;
+    left: 46rem;
+    text-decoration: underline;
+}
+
+.intro-section p{
+    width: 45rem;
+    max-height: 100%;
+    font-family: "Playwrite NG Modern", cursive;
+    line-height: 2rem;
+    width: 50%;
+    font-size: large;
+    color: white;
+    display: flex;
+    position: relative;
+    top: -24rem;
+    left:46.5rem;
+}
+
+/* Main Body CSS End */
