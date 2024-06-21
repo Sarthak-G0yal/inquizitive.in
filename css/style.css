@@ -43,7 +43,7 @@ nav{
 a{
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
-    color: hsla(0, 0%, 0%, 1);
+    color: black;
     font-size: 1.2rem;
     font-weight: 700;
     padding: 0 .4rem 0 .4rem;
@@ -52,8 +52,8 @@ a{
 a:hover{
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
-    color: hsl(0, 0%, 0%);
-    text-shadow: 1px 1px 5px rgb(174, 172, 172);
+    color: black;
+    text-shadow: 1px 1px 5px rgb(75, 75, 75);
     font-size: 1.2rem;
     font-weight: 700;
     padding: 0 .4rem 0 .4rem;
@@ -87,15 +87,16 @@ a:hover{
     height: 27rem;
     width: 100%;
     border: 2px solid black;
-    background-image: url('../img/TeamInquizitive.JPG');
-    background-size: cover;
+    background-image: url('../img/ClubBanner.png');
+    background-size:contain;
+    background-repeat: no-repeat;
     background-position: center center;
  }
 
- .Photo{
+ .backgroundcolor{
     height: 27rem;
     width: 100%;
-    background-color: white;
+    background-color: black;
 
  }
 
@@ -153,18 +154,27 @@ a:hover{
 /* Footer CSS Start*/
 
 footer {
-    height: 20rem;
+    height: 30rem;
     width:100%;
     background-color: #001011;
 }
-.social-nav{
-    position: relative;
-    top: 3%;
-    left: 44%
+
+.logo{
+    height: 30rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
 }
-.socialbutton{
-    height: 1.875rem;
-    width: 1.875rem;
+.logo img{
+    background-color: white;
+    border-radius: 100px;
+}
+.logo p{
+    color: white;
+    font-family: 'DM Serif Text','Times New Roman', Times, serif;
+    text-decoration: underline;
 }
 
 /* Footer CSS End*/
