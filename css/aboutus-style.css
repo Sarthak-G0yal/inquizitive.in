@@ -156,4 +156,7 @@ footer {
     text-decoration: underline;
 }
 
+.social-nav{
+    display: flex;
+}
 /* Footer CSS End*/
