@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 header{
-    height: 7rem;
+    height: 6rem;
     }
 #logo{
     height: 5.625rem;
@@ -150,13 +150,11 @@ footer {
     width:100%;
     background-color: #001011;
     display: grid;
-    grid-template-columns: .3;
-    
+    grid-template-columns: .4fr .3fr .3fr;
 }
 
 .logo{
     height: 30rem;
-    width: 40rem;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -171,5 +169,23 @@ footer {
     font-family: 'DM Serif Text','Times New Roman', Times, serif;
     text-decoration: underline;
 }
+.nowrap{
+    white-space: nowrap;
+}
+.socialnav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.socialnav img{
+    height: 3rem;
+}
+
+.socialnav  a{
+    color: #fff;
+    text-decoration: none;
+}
+
 
 /* Footer CSS End*/
