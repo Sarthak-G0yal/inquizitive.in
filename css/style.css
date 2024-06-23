@@ -34,13 +34,13 @@ header{
     top: 3rem;
     left: 10rem;
     }
-nav{
+header nav{
     text-align: right;
     float:right;
     margin-top: 1.16rem;
     }
 
-a{
+header nav a{
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     color: black;
@@ -49,7 +49,7 @@ a{
     padding: 0 .4rem 0 .4rem;
 }
 
-a:hover{
+header nav a:hover{
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     color: black;
@@ -150,11 +150,11 @@ footer {
     width:100%;
     background-color: #001011;
     display: grid;
-    grid-template-columns: .4fr .3fr .3fr;
+    grid-template-columns: .5fr .2fr .3fr;
 }
 
 .logo{
-    height: 30rem;
+    height: 28rem;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -172,11 +172,29 @@ footer {
 .nowrap{
     white-space: nowrap;
 }
+
+.pagenav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.pagenav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.pagenav a:hover{
+    color: #7C90A0;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
 .socialnav{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-evenly;
 }
 .socialnav img{
     height: 3rem;
@@ -187,5 +205,17 @@ footer {
     text-decoration: none;
 }
 
+.socialnav  a:hover{
+    color: #7C90A0;
+    text-decoration: none;
+}
+
+.copy{
+    background-color: #001314;
+    color: #7C90A0;
+    grid-column: span 3;
+    display: flex;
+    place-content: center;
+}
 
 /* Footer CSS End*/

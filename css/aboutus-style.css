@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
 
-/* Header CSS Start*/
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Header CSS Start*/
+
 header{
     height: 7rem;
     }
@@ -40,7 +41,7 @@ nav{
     margin-top: 1.16rem;
     }
 
-a{
+header nav a{
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     color: #000000;
@@ -49,7 +50,7 @@ a{
     padding: 0 .4rem 0 .4rem;
 }
 
-a:hover{
+header nav a:hover{
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     color: #000000;
@@ -136,11 +137,12 @@ footer {
     height: 30rem;
     width:100%;
     background-color: #001011;
+    display: grid;
+    grid-template-columns: .5fr .2fr .3fr;
 }
 
 .logo{
-    height: 30rem;
-    width: 40rem;
+    height: 28rem;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -155,8 +157,53 @@ footer {
     font-family: 'DM Serif Text','Times New Roman', Times, serif;
     text-decoration: underline;
 }
-
-.social-nav{
-    display: flex;
+.nowrap{
+    white-space: nowrap;
 }
+
+.pagenav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.pagenav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.pagenav a:hover{
+    color: #7C90A0;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.socialnav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.socialnav img{
+    height: 3rem;
+}
+
+.socialnav  a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.socialnav  a:hover{
+    color: #7C90A0;
+    text-decoration: none;
+}
+
+.copy{
+    background-color: #001314;
+    color: #7C90A0;
+    grid-column: span 3;
+    display: flex;
+    place-content: center;
+}
+
 /* Footer CSS End*/
