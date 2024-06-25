@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+.nowrap{
+    white-space: nowrap;
+}
+
 /* Header CSS Start*/
 
 header{
@@ -88,6 +92,8 @@ header nav a:hover{
 
 /* Main Body CSS Start */
 
+    /* intro-section CSS Start */
+
 .intro-section{
     height:33rem;
     background-color: #001011;
@@ -116,7 +122,6 @@ header nav a:hover{
 .aboutus-para h2{
     color: #7C90A0;
     font-size: 2.5rem;
-    text-decoration: underline;
 }
 
 .aboutus-para p{
@@ -126,6 +131,81 @@ header nav a:hover{
     text-align: justify;
     text-justify: inter-word;
 }
+    /* intro-section CSS End */
+
+    
+    /* meetourTeam-section CSS Start */
+
+
+.heading{
+    height: 4rem;
+    display: flex;
+    place-content: center;
+    font-size: 1.5rem;
+    color: #001011;
+    text-shadow: 2px 2px 2px #7C90A0;
+}
+.leads{
+    height: 14rem;
+    display: grid;
+    grid-template-columns: .14fr .14fr .14fr .14fr;
+    place-content: center;
+}
+.card{
+    height: 13rem;
+    width: 11rem;
+    border:2px solid #001011;
+    display: grid;
+    grid-template-rows: .1fr .5fr .2fr .2fr;
+    justify-content: center;
+    justify-self: center;
+    border-radius: 1.4rem;
+    box-shadow: 2px 2px 4px #7C90A0;
+}
+.linkedin{
+    color: royalblue;
+}
+.cardtext{
+    justify-self: center;
+    text-decoration: none;
+}
+
+.person_name{
+    font-size: 1.05rem;
+    font-weight: bold; 
+    color:black ;
+}
+.position{
+    font-size: .6rem;
+}
+.card img{
+    margin-top: 5px;
+    border-radius: 4.6rem;
+    justify-self: center;
+    font-weight: 500;
+}
+
+.coreQuiz{
+    height: 14rem;
+    display: grid;
+    grid-template-columns: .14fr .14fr .14fr .14fr .14fr .14fr .14fr;
+    place-content: center;
+}
+
+.eventTeam{
+    height: 14rem;
+    display: grid;
+    grid-template-columns: .14fr .14fr .14fr .14fr .14fr;
+    place-content: center;
+}
+
+.socialTeam{
+    height: 14rem;
+    display: grid;
+    grid-template-columns: .14fr .14fr .14fr;
+    place-content: center;
+}
+    /* meetourTeam-section CSS End */
 
 
 

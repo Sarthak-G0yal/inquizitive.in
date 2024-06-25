@@ -2,13 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
 
-/* Header CSS Start*/
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+.nowrap{
+    white-space: nowrap;
+}
+
+/* Header CSS Start*/
+
 header{
     height: 6rem;
     }
@@ -168,9 +173,6 @@ footer {
     color: white;
     font-family: 'DM Serif Text','Times New Roman', Times, serif;
     text-decoration: underline;
-}
-.nowrap{
-    white-space: nowrap;
 }
 
 .pagenav{
