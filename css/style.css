@@ -1,19 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
-
+/* RESET AND VARIABLE */
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
 .nowrap{
     white-space: nowrap;
 }
+:root{
+    /* COLOR */
+    --ALT-TEXT-COLOR: black;
+    --BG-COLOR: #001011;
+    --GREY-COLOR:#7C90A0;
+    --MAIN-TEXT-COLOR: white;
+    
+    /* SHADOW */
+    --BOX-SHADOW:2px 2px 4px #7C90A0;
+    --TEXT-SHADOW:1px 1px 5px #7C90A0;
+    --TEXT-SHADOW-WHITE:1px 1px 3px hsla(0, 0%, 100%, 0.5);
+    
+}
 
 /* Header CSS Start*/
-
 header{
     height: 6rem;
     }
@@ -23,141 +34,128 @@ header{
     float:left
     }
 #clubname{
+    float:left;
     font-family: 'DM Serif Text','Times New Roman', Times, serif;
     font-size: 2rem;
-    float:left;
     position: absolute;
-    top: 1.1rem;
     left: 6.1rem;
+    top: 1.1rem;
     }
 #iiitdwd{
-    font-family: 'DM Serif Text','Times New Roman', Times, serif;
     float:left;
+    font-family: 'DM Serif Text','Times New Roman', Times, serif;
     font-size: .9rem;
     font-weight: 100;
     position: absolute;
-    top: 3rem;
     left: 10rem;
+    top: 3rem;
     }
 header nav{
-    text-align: right;
     float:right;
     margin-top: 1.16rem;
+    text-align: right;
     }
-
 header nav a{
+    color: var(--ALT-TEXT-COLOR);
     font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
-    color: black;
     font-size: 1.2rem;
     font-weight: 700;
+    opacity: .85;
     padding: 0 .4rem 0 .4rem;
+    text-decoration: none;
 }
-
 header nav a:hover{
+    color: var(--ALT-TEXT-COLOR);
     font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
-    color: black;
-    text-shadow: 1px 1px 5px rgb(75, 75, 75);
     font-size: 1.2rem;
     font-weight: 700;
+    opacity: 1;
     padding: 0 .4rem 0 .4rem;
+    text-decoration: none;
+    text-shadow: var(--TEXT-SHADOW);
     }
-
 #headerbutton{
-    height:3rem;
-    width:7.5rem;
-    margin-right: .5rem;
+    background-color: var(--BG-COLOR);
     border-radius: .7rem;
-    font-weight: 550;
-    background-color: #001011;
-    color:whitesmoke;
+    color:var(--MAIN-TEXT-COLOR);
     font-size: 1rem;
+    font-weight: 550;
+    height:3rem;
+    margin-right: .5rem;
+    width:7.5rem;
 }
 #headerbutton:hover{
-    height:3rem;
-    width:7.5rem;
+    background-color: var(--BG-COLOR);
     border-radius: .7rem;
+    color:var(--MAIN-TEXT-COLOR);
+    height:3rem;
     margin-right: .5rem;
-    background-color: #001011;
-    text-shadow: 1px 1px 5px white;
-    color:whitesmoke;
+    text-shadow: var(--TEXT-SHADOW-WHITE);
+    width:7.5rem;
 }
-
 /* Header CSS End */
 
 /* Main Body CSS  Start*/
-
  .Photo{
-    height: 28rem;
-    width: 100%;
-    border: 2px solid black;
     background-image: url('../img/ClubBanner.png');
     background-size:cover;
-    
+    border: 2px solid black;
+    height: 28rem;
+    width: 100%;
  }
-
  #Quote{
-    font-size: 4rem;
+    color: var(--MAIN-TEXT-COLOR);
     font-family: 'Times New Roman', Times, serif;
-    color: #fff;
-    text-align: center;
+    font-size: 4rem;
     position: relative;
+    text-align: center;
     top: 18rem;
  }
-
  #QuoteMeaning{
+    color: var(--MAIN-TEXT-COLOR);
     display: inline;
-    font-size: 1.5rem;
     font-family: 'Cedarville Cursive',cursive;
-    color: #fff;
+    font-size: 1.5rem;
+    left: 45rem;
     position: relative;
     top: 17rem;
-    left: 45rem;
  }
-
-
  .button2{
     height: 8rem;
     width: 100%;
 
  }
-
  .button2 button{
-    height:4rem;
-    width:15%;
+    background-color: var(--BG-COLOR);
     border-radius: .7rem;
-    font-weight: 550;
-    background-color: #001011;
-    color:whitesmoke;
+    color:var(--MAIN-TEXT-COLOR);
     font-size: 1.2rem;
+    font-weight: 550;
+    height:4rem;
+    left: 42.5%;
     position: relative;
     top: 2rem;
-    left: 42.5%;
+    width:15%;
 }
 .button2 button:hover{
-    height:4rem;
-    width:15%;
+    background-color: var(--BG-COLOR);
     border-radius: .7rem;
+    color:var(--MAIN-TEXT-COLOR);
     font-size: 1.2rem;
-    background-color: #001011;
-    text-shadow: 1px 1px 5px white;
-    color:whitesmoke;
+    height:4rem;
+    text-shadow: var(--TEXT-SHADOW-WHITE);
+    width:15%;
 }
-
 /* Main Body CSS End*/
 
-
 /* Footer CSS Start*/
-
 footer {
-    height: 20rem;
-    width:100%;
-    background-color: #001011;
+    background-color: var(--BG-COLOR);
     display: grid;
     grid-template-columns: .5fr .2fr .3fr;
+    height: 20rem;
+    width:100%;
 }
-
 .logo{
     height: 18rem;
     display: flex;
@@ -166,33 +164,29 @@ footer {
     justify-content: center;
 }
 .logo img{
-    border:1px solid white;
     border-radius: 100px;
+    border:1px solid white;
 }
 .logo p{
-    color: white;
+    color: var(--MAIN-TEXT-COLOR);
     font-family: 'DM Serif Text','Times New Roman', Times, serif;
     text-decoration: underline;
 }
-
 .pagenav{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 .pagenav a{
-    color: #fff;
-    text-decoration: none;
+    color: var(--MAIN-TEXT-COLOR);
     font-size: 1.3rem;
+    text-decoration: none;
 }
-
 .pagenav a:hover{
-    color: #7C90A0;
-    text-decoration: none;
+    color: var(--GREY-COLOR);
     font-size: 1.3rem;
+    text-decoration: none;
 }
-
 .socialnav{
     display: flex;
     flex-direction: column;
@@ -201,23 +195,19 @@ footer {
 .socialnav img{
     height: 3rem;
 }
-
 .socialnav  a{
-    color: #fff;
+    color: var(--MAIN-TEXT-COLOR);
     text-decoration: none;
 }
-
 .socialnav  a:hover{
-    color: #7C90A0;
+    color: var(--GREY-COLOR);
     text-decoration: none;
 }
-
 .copy{
     background-color: #001314;
-    color: #7C90A0;
-    grid-column: span 3;
+    color: var(--GREY-COLOR);
     display: flex;
+    grid-column: span 3;
     place-content: center;
 }
-
 /* Footer CSS End*/
