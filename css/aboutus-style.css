@@ -24,6 +24,7 @@
 }
 
 /* Header CSS Start*/
+
 header{
     height: 6rem;
     }
@@ -173,6 +174,7 @@ header nav a:hover{
 }
 .card img{
     margin-top: 5px;
+    border: 3px double #001011;
     border-radius: 4.6rem;
     justify-self: center;
     font-weight: 500;

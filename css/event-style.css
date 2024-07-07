@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-
 /* RESET AND VARIABLE */
 *{
     box-sizing: border-box;
@@ -94,90 +91,6 @@ header nav a:hover{
     width:7.5rem;
 }
 /* Header CSS End */
-
-/* Main Body CSS  Start*/
- .Photo{
-    background-image: url('../img/ClubBanner.png');
-    background-size:cover;
-    border: 2px solid black;
-    height: 28rem;
-    width: 100%;
- }
- #Quote{
-    color: var(--MAIN-TEXT-COLOR);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 4rem;
-    position: relative;
-    text-align: center;
-    top: 18rem;
- }
- #QuoteMeaning{
-    color: var(--MAIN-TEXT-COLOR);
-    display: inline;
-    font-family: 'Cedarville Cursive',cursive;
-    font-size: 1.5rem;
-    left: 45rem;
-    position: relative;
-    top: 17rem;
- }
- .button2{
-    height: 8rem;
-    width: 100%;
-
- }
- .button2 button{
-    background-color: var(--BG-COLOR);
-    border-radius: .7rem;
-    color:var(--MAIN-TEXT-COLOR);
-    font-size: 1.2rem;
-    font-weight: 550;
-    height:4rem;
-    left: 42.5%;
-    position: relative;
-    top: 2rem;
-    width:15%;
-}
-.button2 button:hover{
-    background-color: var(--BG-COLOR);
-    border-radius: .7rem;
-    color:var(--MAIN-TEXT-COLOR);
-    font-size: 1.2rem;
-    height:4rem;
-    text-shadow: var(--TEXT-SHADOW-WHITE);
-    width:15%;
-}
-
-.updatesSection{
-    height: 30rem;
-    display: flex;
-    place-content: center;
-    margin-bottom: 1rem;
-}
-
-.table{
-    height: 95%;
-    width: 70%;
-    display: grid;
-    grid-template-columns: .5fr .5fr;
-    column-gap: 3px;
-}
-
-.table .column{
-    height: 100%;
-    width: 100%;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: var(--BOX-SHADOW);
-}
-
-.table .column h3{
-    color:var(--BG-COLOR);
-    font-size: 1.5rem;
-    margin-top: 5px;
-}
-/* Main Body CSS End*/
 
 /* Footer CSS Start*/
 footer {
