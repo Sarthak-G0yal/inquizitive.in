@@ -92,6 +92,38 @@ header nav a:hover{
 }
 /* Header CSS End */
 
+/* Main CSS Start */
+.achievement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.achievement img{
+    height: 25rem;
+    border: 2px solid #001011;
+    border-radius: 2rem;
+    box-shadow: var(--BOX-SHADOW);
+}
+.achievement img:hover{
+    display: none;
+}
+.achievement li{
+    height: 25rem;
+    border: 2px solid #001011;
+    border-radius: 2rem;
+    background-color: #001011;
+}
+.achievement li :hover{
+    transition: 2s;
+    transform: rotateY(180deg);
+    height: 25rem;
+    
+    border: 2px solid #001011;
+    background-color: #001011;
+}
+
+/* Main CSS End */
+
 /* Footer CSS Start*/
 footer {
     background-color: var(--BG-COLOR);

@@ -21,7 +21,6 @@
     --BOX-SHADOW:2px 2px 4px #7C90A0;
     --TEXT-SHADOW:1px 1px 5px #7C90A0;
     --TEXT-SHADOW-WHITE:1px 1px 3px hsla(0, 0%, 100%, 0.5);
-    
 }
 
 /* Header CSS Start*/
@@ -108,13 +107,13 @@ header nav a:hover{
     position: relative;
     top: 17rem;
  }
- .button2{
+ .button-2{
     height: 8rem;
     width: 100%;
     display: flex;
     justify-content: center;
  }
- .button2 button{
+ .button-2 button{
     background-color: var(--BG-COLOR);
     border-radius: .7rem;
     color:var(--MAIN-TEXT-COLOR);
@@ -123,7 +122,7 @@ header nav a:hover{
     height:4rem;
     width:15%;
 }
-.button2 button:hover{
+.button-2 button:hover{
     background-color: var(--BG-COLOR);
     border-radius: .7rem;
     color:var(--MAIN-TEXT-COLOR);
@@ -133,21 +132,20 @@ header nav a:hover{
     width:15%;
 }
 
-.updatesSection{
+    /* .updates-section */
+.updates-section{
     height: 30rem;
     display: flex;
     place-content: center;
     margin-bottom: 1rem;
 }
-
 .table{
     height: 95%;
-    width: 70%;
+    width: 60%;
     display: grid;
     grid-template-columns: .5fr .5fr;
-    column-gap: 3px;
+    column-gap: 7px;
 }
-
 .table .column{
     height: 100%;
     width: 100%;
@@ -157,11 +155,22 @@ header nav a:hover{
     align-items: center;
     box-shadow: var(--BOX-SHADOW);
 }
-
 .table .column h3{
     color:var(--BG-COLOR);
-    font-size: 1.5rem;
-    margin-top: 5px;
+    font-size: 1.8rem;
+    margin: 5px;
+}
+.table .column li{
+    font-size: 1.3rem;
+    text-align: justify;
+    text-justify: inter-word;
+    list-style-type:none;
+    margin: 1rem;
+    font-weight: 500;
+}
+.table .column li a {
+    text-decoration: none;
+    color: black;
 }
 /* Main Body CSS End*/
 
