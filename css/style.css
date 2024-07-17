@@ -82,31 +82,91 @@ header nav a:hover{
 }
 /* Header CSS End */
 
-/* Main Body CSS  Start*/
- .Photo{
-    background-image: url('../img/ClubBanner.png');
-    background-size:cover;
-    border: 2px solid black;
-    height: 28rem;
-    width: 100%;
- }
- #Quote{
-    color: var(--MAIN-TEXT-COLOR);
+/* Main Body CSS  Start*/   
+ #quote{
+    color: white;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 4rem;
-    position: relative;
-    text-align: center;
-    top: 18rem;
+    font-size: 4rem;    
  }
- #QuoteMeaning{
-    color: var(--MAIN-TEXT-COLOR);
+ #quote-meaning{
+    color: white;
     display: inline;
     font-family: 'Cedarville Cursive',cursive;
     font-size: 1.5rem;
-    left: 45rem;
+ } 
+
+/* Slideshow container Start*/
+.slideshow-container {
+    height: 30.2rem;    
     position: relative;
-    top: 17rem;
- }
+    border: 2px solid black;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides img{
+    height: 30rem;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: -22px 10px 10px 0;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Caption text */
+  .text {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 10rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 5px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: var(--GREY-COLOR);
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: var(--BG-COLOR);
+  }
+/* Slideshow container END*/
+
  .button-2{
     height: 8rem;
     width: 100%;
