@@ -146,6 +146,7 @@ header nav a:hover{
 .card{
     height: 13rem;
     width: 11rem;
+    background-color: #FFEAEC;
     border:2px solid #001011;
     display: grid;
     grid-template-rows: .1fr .5fr .2fr .2fr;
